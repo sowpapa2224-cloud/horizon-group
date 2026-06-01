@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTrip — Horizon Groupe | Découvrez le Sénégal</title>
+  <meta name="description" content="L'Agence Sénégalaise de Promotion Touristique. Circuits culturels, éco-tourisme, aventure et détente au Sénégal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="INDEX.CSS">
+</head>
+<script src="reservation-notifications.js"></script>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </div>
+      <span>SmartTrip</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#accueil" class="nav-link">Accueil</a></li>
+      <li><a href="#decouvertes" class="nav-link">Découvertes</a></li>
+      <li><a href="#carte" class="nav-link">Carte</a></li>
+      <li><a href="#reservations" class="nav-link">Réservations</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#reservations" class="btn-nav-cta">Réserver <span>→</span></a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#accueil">Accueil</a>
+    <a href="#decouvertes">Découvertes</a>
+    <a href="#carte">Carte interactive</a>
+    <a href="#reservations">Réservations</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+  <section id="accueil" class="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-fade">
+        <span class="badge-dot"></span>
+        Agence Officielle — Horizon Groupe
+      </div>
+
+      <h1 class="hero-title reveal-up">
+        Découvrez le<br>
+        <em>Sénégal</em><br>
+        autrement.
+      </h1>
+
+      <p class="hero-desc reveal-up" style="animation-delay:.15s">
+        Circuits culturels, éco-tourisme, aventure et détente — des expériences authentiques qui préservent la beauté et l'identité du Sénégal.
+      </p>
+
+      <div class="hero-actions reveal-up" style="animation-delay:.25s">
+        <a href="#decouvertes" class="btn-primary">
+          <span>🗺️</span> Explorer les destinations
+        </a>
+        <a href="#reservations" class="btn-outline">
+          <span>📅</span> Réserver un voyage
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up" style="animation-delay:.38s">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="110">0</span>
+          <span class="stat-label">Agents experts</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-label">Destinations</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="2014">0</span>
+          <span class="stat-label">Année de création</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visuel Hero : mini-carousel en boucle -->
+    <div class="hero-visuals reveal-right">
+      <div class="hero-carousel">
+        <div class="hero-carousel-track" id="heroCarouselTrack">
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#0a3d26,#1D9E75)">
+          <img src="citry.jpg">
+            </div>
+            <span class="slide-label">Dakar, la capitale</span>
+          </div>
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#8B6914,#EF9F27)">
+             <img src="lampou;l.jpg">
+            </div>
+            <span class="slide-label">Désert de Lompoul</span>
+          </div>
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#1a4d6e,#378ADD)">
+              <img src="casamance.jpg">
+            </div>
+            <span class="slide-label">Casamance</span>
+          </div>
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#3d1a0a,#A0522D)">
+            <img src="dkr.jpg">
+            </div>
+            <span class="slide-label">Île de Gorée</span>
+          </div>
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#0d4a2e,#2E8B57)">
+             <img src="citry.jpg">
+            </div>
+            <span class="slide-label">Niokolo-Koba</span>
+          </div>
+          <div class="hero-slide">
+            <div class="slide-img" style="background:linear-gradient(135deg,#1a2a4a,#4169E1)">
+            <img src="sn.jpg">
+            </div>
+            <span class="slide-label">Saint-Louis</span>
+          </div>
+        </div>
+        <div class="carousel-dots" id="heroDots"></div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ DESTINATIONS ═══════════════════════ -->
+  <section id="decouvertes" class="section section--light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <span class="section-label">🌿 Nos destinations</span>
+          <h2 class="section-title">Explorez le Sénégal</h2>
+          <p class="section-desc">Des expériences uniques alliant nature, culture et aventure dans le respect des communautés locales.</p>
+        </div>
+        <div class="section-filters" id="categoryFilters">
+          <button class="filter-btn active" data-filter="all">Tout</button>
+          <button class="filter-btn" data-filter="Aventure">Aventure</button>
+          <button class="filter-btn" data-filter="Nature">Nature</button>
+          <button class="filter-btn" data-filter="Culturel">Culturel</button>
+          <button class="filter-btn" data-filter="Éco-tourisme">Éco</button>
+          <button class="filter-btn" data-filter="Détente">Détente</button>
+        </div>
+      </div>
+
+      <!-- Carousel destinations en boucle infinie -->
+      <div class="destinations-carousel-wrapper fade-in">
+        <div class="destinations-carousel" id="destinationsCarousel">
+          <div class="destinations-track" id="destinationsTrack">
+            <!-- Cartes générées par JS -->
+          </div>
+        </div>
+        <button class="carousel-nav carousel-nav--prev" id="destPrev" aria-label="Précédent">‹</button>
+        <button class="carousel-nav carousel-nav--next" id="destNext" aria-label="Suivant">›</button>
+      </div>
+
+      <!-- Grille filtrée (cachée par défaut si filtre actif) -->
+      <div class="destinations-grid" id="destinationsGrid" style="display:none"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CARTE ═══════════════════════════════ -->
+  <section id="carte" class="section section--white">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <span class="section-label">📍 Carte interactive</span>
+          <h2 class="section-title">Localisez vos sites</h2>
+          <p class="section-desc">Retrouvez tous nos sites touristiques géolocalisés avec informations et itinéraires.</p>
+        </div>
+      </div>
+
+      <div class="map-wrapper fade-in">
+        <!-- Carte SVG du Sénégal -->
+        <div class="map-container">
+          <div class="map-header">
+            <span>🗺️</span>
+            <strong>Carte du Sénégal</strong>
+            <span class="map-subtitle">6 destinations d'exception</span>
+          </div>
+          <div class="map-senegal-container" id="mapSenegalContainer">
+            <svg class="map-svg" viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" id="mapSVG">
+              <!-- Forme simplifiée du Sénégal -->
+              <defs>
+                <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#c8f0e2;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#a8ddc8;stop-opacity:1" />
+                </linearGradient>
+                <filter id="mapShadow">
+                  <feDropShadow dx="3" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.15)"/>
+                </filter>
+              </defs>
+
+              <!-- Contour du Sénégal (approximation SVG) -->
+              <path class="senegal-shape" filter="url(#mapShadow)" fill="url(#mapGrad)" stroke="#5DCAA5" stroke-width="2"
+                d="
+                  M 60,80
+                  L 80,60
+                  L 120,45
+                  L 170,35
+                  L 220,30
+                  L 270,32
+                  L 310,28
+                  L 350,35
+                  L 390,50
+                  L 420,70
+                  L 440,95
+                  L 445,125
+                  L 435,155
+                  L 415,175
+                  L 400,200
+                  L 420,220
+                  L 440,250
+                  L 430,270
+                  L 400,280
+                  L 360,285
+                  L 320,290
+                  L 300,310
+                  L 280,340
+                  L 250,355
+                  L 220,350
+                  L 190,335
+                  L 165,310
+                  L 150,285
+                  L 130,270
+                  L 110,260
+                  L 90,240
+                  L 75,215
+                  L 65,190
+                  L 55,160
+                  L 48,130
+                  L 50,105
+                  Z
+                "
+              />
+
+              <!-- Gambie (enclave) -->
+              <path class="gambie-shape" fill="rgba(255,255,255,0.5)" stroke="#9FDABF" stroke-width="1.5"
+                d="M 145,240 L 200,230 L 250,228 L 290,235 L 300,245 L 290,255 L 250,258 L 200,255 L 145,258 Z"
+              />
+              <text x="215" y="250" class="map-country-label" style="font-size:8px;fill:#6B9E8A">Gambie</text>
+
+              <!-- Labels régions légères -->
+              <text x="340" y="120" class="map-region-label">NORD</text>
+              <text x="80" y="200" class="map-region-label">OUEST</text>
+              <text x="340" y="270" class="map-region-label">SUD</text>
+              <text x="200" y="160" class="map-region-label">CENTRE</text>
+
+              <!-- Océan Atlantique -->
+              <text x="18" y="180" class="map-ocean-label" transform="rotate(-90,18,180)">Atlantique</text>
+
+              <!-- Pins des destinations (positions relatives au SVG 500x380) -->
+              <!-- Dakar: extrême ouest ~(55, 165) -->
+              <g class="map-pin" data-dest="Dakar" data-idx="0" style="animation-delay:0s">
+                <circle class="pin-pulse" cx="62" cy="168" r="18" />
+                <circle class="pin-dot" cx="62" cy="168" r="9" fill="#EF9F27" stroke="white" stroke-width="3"/>
+                <text x="80" y="164" class="pin-label">
+                    
+              </g>
+
+              <g class="map-pin" data-dest="Désert de Lompoul" data-idx="1" style="animation-delay:0.4s">
+  <circle class="pin-pulse" cx="155" cy="100" r="18" />
+  <circle class="pin-dot" cx="155" cy="100" r="9" fill="#EF9F27" stroke="white" stroke-width="3"/>
+  <text x="173" y="96" class="pin-label">Lompoul</text>
+</g>
+
+<g class="map-pin" data-dest="Saint-Louis" data-idx="4" style="animation-delay:0.8s">
+  <circle class="pin-pulse" cx="215" cy="65" r="18" />
+  <circle class="pin-dot" cx="215" cy="65" r="9" fill="#378ADD" stroke="white" stroke-width="3"/>
+  <text x="233" y="61" class="pin-label">Saint-Louis</text>
+</g>
+
+<g class="map-pin" data-dest="Parc de Djoudj" data-idx="3" style="animation-delay:1.2s">
+  <circle class="pin-pulse" cx="285" cy="58" r="18" />
+  <circle class="pin-dot" cx="285" cy="58" r="9" fill="#1D9E75" stroke="white" stroke-width="3"/>
+  <text x="303" y="54" class="pin-label">Djoudj</text>
+</g>
+
+<g class="map-pin" data-dest="Parc du Niokolo-Koba" data-idx="2" style="animation-delay:1.6s">
+  <circle class="pin-pulse" cx="375" cy="215" r="18" />
+  <circle class="pin-dot" cx="375" cy="215" r="9" fill="#1D9E75" stroke="white" stroke-width="3"/>
+  <text x="275" y="207" class="pin-label">Niokolo-Koba</text>
+</g>
+
+<g class="map-pin" data-dest="Casamance" data-idx="5" style="animation-delay:2.0s">
+  <circle class="pin-pulse" cx="210" cy="320" r="18" />
+  <circle class="pin-dot" cx="210" cy="320" r="9" fill="#378ADD" stroke="white" stroke-width="3"/>
+  <text x="228" y="316" class="pin-label">Casamance</text>
+</g>
+</svg>
+</div>
+</div>
+
+<div class="map-legend" id="mapLegend">
+  <h4 class="map-legend-title">Sites touristiques</h4>
+  <div class="legend-items" id="legendItems">
+    
+    <div class="legend-item" data-idx="2">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#A0522D; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="dkr.jpg" alt="Dakar" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Île de Gorée / Dakar</span>
+        <span class="legend-cat">Culturel · Histoire</span>
+      </div>
+    </div>
+
+    <div class="legend-item" data-idx="0">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#EF9F27; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="lompoul.jpg" alt="Lompoul" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Désert de Lompoul</span>
+        <span class="legend-cat">Aventure</span>
+      </div>
+    </div>
+
+    <div class="legend-item" data-idx="4">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#378ADD; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="saintlouis.jpg" alt="Saint-Louis" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Saint-Louis</span>
+        <span class="legend-cat">Culturel · Patrimoine</span>
+      </div>
+    </div>
+
+    <div class="legend-item" data-idx="3">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#1D9E75; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="djoudj.jpg" alt="Djoudj" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Parc de Djoudj</span>
+        <span class="legend-cat">Éco-tourisme · Nature</span>
+      </div>
+    </div>
+
+    <div class="legend-item" data-idx="1">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#1D9E75; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="niokolo.jpg" alt="Niokolo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Niokolo-Koba</span>
+        <span class="legend-cat">Nature · Aventure</span>
+      </div>
+    </div>
+
+    <div class="legend-item" data-idx="5">
+      <div style="position: relative; display: flex; align-items: center;">
+        <span class="legend-dot" style="background:#378ADD; position: absolute; z-index: 2; bottom: 0; right: 0; width: 10px; height: 10px; border-radius: 50%;"></span>
+        <img src="casamance.jpg" alt="Casamance" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      </div>
+      <div>
+        <span class="legend-name">Casamance</span>
+        <span class="legend-cat">Éco-tourisme · Détente</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</section>
+
+  <!-- ═══════════════════════════════ RÉSERVATIONS ═══════════════════════ -->
+  <section id="reservations" class="section section--light">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <span class="section-label">📅 Réservations</span>
+          <h2 class="section-title">Planifiez votre séjour</h2>
+          <p class="section-desc">Réservez facilement vos circuits. Notre équipe vous confirme sous 24h.</p>
+        </div>
+      </div>
+
+      <div class="resa-wrapper">
+        <div class="resa-form-card fade-in">
+          <h3 class="form-title">Demande de réservation</h3>
+          <form id="reservationForm" novalidate>
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <select id="destination" name="destination_id" required>
+                <option value="">Choisir une destination…</option>
+                <option value="1">Désert de Lompoul</option>
+                <option value="2">Parc du Niokolo-Koba</option>
+                <option value="3">Île de Gorée / Dakar</option>
+                <option value="4">Parc de Djoudj</option>
+                <option value="5">Saint-Louis</option>
+                <option value="6">Casamance</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dateArrivee">Date d'arrivée</label>
+                <input type="date" id="dateArrivee" name="date_arrivee" required>
+              </div>
+              <div class="form-group">
+                <label for="dateDepart">Date de départ</label>
+                <input type="date" id="dateDepart" name="date_depart" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nomResa">Nom complet</label>
+                <input type="text" id="nomResa" name="nom" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+221 77 000 00 00" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emailResa">Email</label>
+                <input type="email" id="emailResa" name="email" placeholder="votre@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="nbPersonnes">Nombre de personnes</label>
+                <select id="nbPersonnes" name="nb_personnes" required>
+                  <option value="1">1 personne</option>
+                  <option value="2">2 personnes</option>
+                  <option value="3">3 personnes</option>
+                  <option value="5">4–5 personnes</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="messageResa">Message / demandes spéciales</label>
+              <textarea id="messageResa" name="message" rows="3" placeholder="Allergies alimentaires, besoins spéciaux, questions…"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitResa">
+              <span class="btn-text">✈️ Envoyer ma demande</span>
+              <span class="btn-loader" style="display:none">⏳ Envoi en cours…</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="resa-avantages fade-in">
+          <h3 class="avantages-title">Pourquoi Horizon Groupe ?</h3>
+          <div class="avantage-card">
+            <div class="avantage-icon" style="background:#E1F5EE">🌱</div>
+            <div>
+              <strong>Tourisme durable</strong>
+              <p>Nous respectons les ressources naturelles et préservons la biodiversité.</p>
+            </div>
+          </div>
+          <div class="avantage-card">
+            <div class="avantage-icon" style="background:#E6F1FB">🤝</div>
+            <div>
+              <strong>Impact local positif</strong>
+              <p>Votre voyage soutient directement les communautés locales.</p>
+            </div>
+          </div>
+          <div class="avantage-card">
+            <div class="avantage-icon" style="background:#FAEEDA">✉️</div>
+            <div>
+              <strong>Confirmation sous 24h</strong>
+              <p>Vous recevrez un email de confirmation personnalisé rapidement.</p>
+            </div>
+          </div>
+          <div class="slogan-box">
+            <em>"Équilibre · Inclusion · Développement"</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ════════════════════════════ -->
+  <section id="contact" class="section section--white">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div>
+          <span class="section-label">✉️ Contact</span>
+          <h2 class="section-title">Parlons de votre voyage</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-infos fade-in">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Téléphone</span>
+              <a href="tel:+221788988476" class="contact-value">78 8988476</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:sowpapa2224@gmail.com" class="contact-value">sowpapa2224@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© 2026 Horizon Groupe — ASPT. Tous droits réservés.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">
+    <span class="toast-icon">✅</span>
+    <span class="toast-msg" id="toastMsg">Message envoyé !</span>
+  </div>
+
+  <script src="INDEX.JS"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("VOTRE_PUBLIC_KEY_EMAILJS"); // À remplacer par ta clé publique fournie par EmailJS
+   })();
+</script>
+</body>
+</html>
